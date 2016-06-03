@@ -1,0 +1,8 @@
+<?php foreach($datavideo['items'] as $key=>$val){?>
+						<li class="list-group-item">
+				    			<a href="play_video.php?video=<?php echo $val['id']['videoId'];?>">
+				    			<img src="<?php echo $val['snippet']['thumbnails']['default']['url'];?>">
+				    			</a>&nbsp;<?php echo $val['snippet']['title']; ?>
+					<?php
+					}
+					?>
